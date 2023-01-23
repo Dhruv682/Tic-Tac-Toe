@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Tic Tac Toe</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <nav>
+      <ul>
+        <li>MyTicTacToe</li>
+      </ul>
+    </nav>
+
+	<table>
+		<tr>
+			<td class="cell" id="0"></td>
+			<td class="cell" id="1"></td>
+			<td class="cell" id="2"></td>
+		</tr>
+		<tr>
+			<td class="cell" id="3"></td>
+			<td class="cell" id="4"></td>
+			<td class="cell" id="5"></td>
+		</tr>
+		<tr>
+			<td class="cell" id="6"></td>
+			<td class="cell" id="7"></td>
+			<td class="cell" id="8"></td>
+		</tr>
+	</table>
+<!--
+    <div class="gameInfo">
+        <h1>Tic-Tac-Toe Game</h1>
+    </div>
+-->
+    
+    <div class="gamerules">
+        <h1>Welcome TO The Game</h1>
+        <ul>
+            <h2>Rules Of The Game</h2>
+            <li>The game is played on a grid that's 3 squares by 3 squares.</li>
+            <li>You are O, your friend (or the computer in this case) is X. Players take turns putting their marks in empty squares</li>
+            <li>The first player to get 3 of her marks in a row (up, down, across, or diagonally) is the winner</li>
+            <li>When all 9 squares are full, the game is over. If no player has 3 marks in a row, the game ends in a tie.</li>
+        
+        </ul>
+        <h1>HOW CAN I WIN AT TIC-TAC-TOE?</h1>
+        <p>To beat the computer (or at least tie), you need to make use of a little bit of strategy. Strategy means figuring out what you need to do to win.
+
+Part of your strategy is trying to figure out how to get three Xs in a row. The other part is trying to figure out how to stop the computer from getting three Os in a row.
+
+After you put an X in a square, you start looking ahead. Where's the best place for your next X? You look at the empty squares and decide which ones are good choices—which ones might let you make three Xs in a row.
+
+You also have to watch where the computer puts its O. That could change what you do next. If the computer gets two Os in a row, you have to put your next X in the last empty square in that row, or the computer will win. You are forced to play in a particular square or lose the game.
+
+If you always pay attention and look ahead, you'll never lose a game of Tic-Tac-Toe. You may not win, but at least you'll tie</p>
+    </div>
+	<div class="endgame">
+		<div class="text"></div>
+	</div>
+	<button id="reset" onClick="startGame()">Replay</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
